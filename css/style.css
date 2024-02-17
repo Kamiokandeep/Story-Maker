@@ -1,0 +1,72 @@
+/*
+CSS Name: Story Maker
+Author: Anndriu U.
+Description: Using HTML, CSS, and JavaScript, emulate the user experience of the popular children’s toy, the Mattel® ‘See ‘N’ Say Storymaker’. 
+Version: 1.0
+Image attribution:
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(245, 245, 245);
+}
+
+.grid-container {
+    width: 95%;
+    margin: 0px auto 0px auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header header header header header"
+        "shape-1-column-1 shape-1-column-2 shape-1-column-3 shape-1-column-4 shape-1-column-5"
+        "shape-2-column-1 shape-2-column-2 shape-2-column-3 shape-2-column-4 shape-2-column-5"
+        "shape-3-column-1 shape-3-column-2 shape-3-column-3 shape-3-column-4 shape-3-column-5"
+        "footer footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item {
+    padding: 10px;
+}
+
+/* ----------
+   CSS Header 
+   ---------- */
+.item[style*="grid-area: header"] {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item[style*="grid-area: header"] .logo {
+    margin: 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: black;
+}
+
+
+/* ----------
+   CSS shape 
+   ---------- */
+
+
+
+/* ------------
+    CSS Footer
+   ------------ */ 
+   .item[style*="grid-area: footer"] {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 10px;
+}
