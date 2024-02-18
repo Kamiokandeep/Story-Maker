@@ -283,3 +283,21 @@ button_surprise.onclick = () => {
   imgcard5.src = src5;
   buttoncard5.innerText = text5;
 };
+
+/*
+ Button Reset
+*/
+const button_reset = document.querySelector("#button-reset");
+button_reset.onclick = () => {
+  // Updates the card image and card text.
+  imgcard1.src = "img/card-1.jpg";
+  buttoncard1.innerText = "Click me!";
+  imgcard2.src = "img/card-2.jpg";
+  buttoncard2.innerText = "Click me!";
+  imgcard3.src = "img/card-3.jpg";
+  buttoncard3.innerText = "Click me!";
+  imgcard4.src = "img/card-4.jpg";
+  buttoncard4.innerText = "Click me!";
+  imgcard5.src = "img/card-5.jpg";
+  buttoncard5.innerText = "Click me!";
+};

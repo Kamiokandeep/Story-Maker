@@ -140,7 +140,11 @@ button{
 }
 
 .item[style*="grid-area: surprise"] button {
-    background-color: #d32828;
+    background-color: #6aae4b;
+}
+
+.item[style*="grid-area: surprise"] #button-reset {
+    background-color: #7b35b2;
 }
 
 .item[style*="grid-area: card-1"] button:hover {
@@ -164,7 +168,11 @@ button{
 }
 
 .item[style*="grid-area: surprise"] button:hover {
-    background-color: #a22121;
+    background-color: #426d2e;
+}
+
+.item[style*="grid-area: surprise"] #button-reset:hover {
+    background-color: #56247b;
 }
 
 /* ------------
