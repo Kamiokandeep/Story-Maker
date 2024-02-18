@@ -291,13 +291,13 @@ const button_reset = document.querySelector("#button-reset");
 button_reset.onclick = () => {
   // Updates the card image and card text.
   imgcard1.src = "img/card-1.jpg";
-  buttoncard1.innerText = "Click me!";
+  buttoncard1.innerText = "Click me again!";
   imgcard2.src = "img/card-2.jpg";
-  buttoncard2.innerText = "Click me!";
+  buttoncard2.innerText = "Click me again!";
   imgcard3.src = "img/card-3.jpg";
-  buttoncard3.innerText = "Click me!";
+  buttoncard3.innerText = "Click me again!";
   imgcard4.src = "img/card-4.jpg";
-  buttoncard4.innerText = "Click me!";
+  buttoncard4.innerText = "Click me again!";
   imgcard5.src = "img/card-5.jpg";
-  buttoncard5.innerText = "Click me!";
+  buttoncard5.innerText = "Click me again!";
 };
