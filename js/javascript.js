@@ -10,7 +10,6 @@ Image attribution: Anndriu U.
  Button 1
 */
 const buttoncard1 = document.querySelector("#button-card-1");
-const textcard1 = document.querySelector('#text-card-1');
 const imgcard1 = document.querySelector('#img-card-1');
 
 function random_card_1() {
@@ -57,14 +56,13 @@ buttoncard1.onclick = () => {
   const {src1, text1}  = random_card_1();
   // Updates the card image and card text.
   imgcard1.src = src1;
-  textcard1.innerText = text1;
+  buttoncard1.innerText = text1;
 };
 
 /*
  Button 2
 */
 const buttoncard2 = document.querySelector("#button-card-2");
-const textcard2 = document.querySelector('#text-card-2');
 const imgcard2 = document.querySelector('#img-card-2');
 
 function random_card_2() {
@@ -107,14 +105,13 @@ buttoncard2.onclick = () => {
   const {src2, text2}  = random_card_2();
   // Updates the card image and card text.
   imgcard2.src = src2;
-  textcard2.innerText = text2;
+  buttoncard2.innerText = text2;
 };
 
 /*
  Button 3
 */
 const buttoncard3 = document.querySelector("#button-card-3");
-const textcard3 = document.querySelector('#text-card-3');
 const imgcard3 = document.querySelector('#img-card-3');
 
 function random_card_3() {
@@ -157,14 +154,13 @@ buttoncard3.onclick = () => {
   const {src3, text3}  = random_card_3();
   // Updates the card image and card text.
   imgcard3.src = src3;
-  textcard3.innerText = text3;
+  buttoncard3.innerText = text3;
 };
 
 /*
  Button 4
 */
 const buttoncard4 = document.querySelector("#button-card-4");
-const textcard4 = document.querySelector('#text-card-4');
 const imgcard4 = document.querySelector('#img-card-4');
 
 function random_card_4() {
@@ -211,14 +207,13 @@ buttoncard4.onclick = () => {
   const {src4, text4}  = random_card_4();
   // Updates the card image and card text.
   imgcard4.src = src4;
-  textcard4.innerText = text4;
+  buttoncard4.innerText = text4;
 };
 
 /*
  Button 5
 */
 const buttoncard5 = document.querySelector("#button-card-5");
-const textcard5 = document.querySelector('#text-card-5');
 const imgcard5 = document.querySelector('#img-card-5');
 
 function random_card_5() {
@@ -261,7 +256,7 @@ buttoncard5.onclick = () => {
   const {src5, text5}  = random_card_5();
   // Updates the card image and card text.
   imgcard5.src = src5;
-  textcard5.innerText = text5;
+  buttoncard5.innerText = text5;
 };
 
 
@@ -278,13 +273,13 @@ button_surprise.onclick = () => {
   const {src5, text5}  = random_card_5();
   // Updates the card image and card text.
   imgcard1.src = src1;
-  textcard1.innerText = text1;
+  buttoncard1.innerText = text1;
   imgcard2.src = src2;
-  textcard2.innerText = text2;
+  buttoncard2.innerText = text2;
   imgcard3.src = src3;
-  textcard3.innerText = text3;
+  buttoncard3.innerText = text3;
   imgcard4.src = src4;
-  textcard4.innerText = text4;
+  buttoncard4.innerText = text4;
   imgcard5.src = src5;
-  textcard5.innerText = text5;
+  buttoncard5.innerText = text5;
 };
