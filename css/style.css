@@ -23,13 +23,12 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-areas:
-        "header header"
-        "surprise card-1"
-        "card-2 card-3"
-        "card-4 card-5"
-        "footer footer";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.6fr 3fr 3fr 3fr 0.6fr;
+        "header header header"
+        "surprise card-1 card-2"
+        "card-3 card-4 card-5"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 3fr 3fr 0.6fr;
 }
 
 .item {
@@ -140,6 +139,7 @@ button{
 }
 
 .item[style*="grid-area: surprise"] button {
+    width: 120px;
     background-color: #6aae4b;
 }
 
