@@ -17,8 +17,8 @@ function random_card_1() {
 
   switch (random_number) {
     case 1:
-      src1 = '../img/the-turkey.jpg';
-      text1 = 'The turkey';
+      src1 = "../img/the-turkey.jpg";
+      text1 = "The turkey";
       break;
     case 2:
       src1 = '../img/mom.jpg';
