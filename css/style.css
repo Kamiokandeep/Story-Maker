@@ -23,12 +23,12 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-areas:
-        "header header header header header"
-        "card-1 card-2 card-3 card-4 card-5"
-        "surprise surprise surprise surprise surprise"
-        "footer footer footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+        "header header"
+        "card-1 card-2"
+        "card-3 card-4"
+        "card-5 surprise"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
 }
 
 .item {
@@ -43,31 +43,68 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 4vh;
 }
 
 .item[style*="grid-area: header"] .logo {
     margin: 0;
     padding: 5px 10px;
     font-weight: bold;
-    font-size: 1.6em;
-    color: rgb(0, 0, 0);
+    font-size: 1.7em;
+    color: rgb(255, 255, 255);
 }
 
 /* -----------
    CSS Button 
    ----------- */
-.item[style*="grid-area: surprise"] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 button{
     padding: 10px;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.item[style*="grid-area: card-1"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item[style*="grid-area: card-2"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item[style*="grid-area: card-3"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item[style*="grid-area: card-4"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item[style*="grid-area: card-5"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item[style*="grid-area: surprise"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #button-card-1 {
@@ -111,17 +148,17 @@ button{
 }
 
 #button-surprise {
-    background-color: #4c89af;
+    background-color: #d32828;
 }
 
 #button-surprise:hover {
-    background-color: #315f7c;
+    background-color: #a22121;
 }
 
 /* --------
    CSS IMG 
    -------- */
-   img {
+img {
     height: 200px;
     width: 200px;
     padding: 1vw;
@@ -135,4 +172,17 @@ button{
     padding: 20px;
     color: rgb(0, 0, 0);
     font-size: 10px;
+    height: 4vh;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "header header header header header"
+            "card-1 card-2 card-3 card-4 card-5"
+            "surprise surprise surprise surprise surprise"
+            "footer footer footer footer footer";
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    }
 }

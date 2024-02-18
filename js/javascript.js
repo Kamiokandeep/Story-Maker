@@ -3,7 +3,7 @@ CSS Name: Story Maker
 Author: Anndriu U.
 Description: Using HTML, CSS, and JavaScript, emulate the user experience of the popular children’s toy, the Mattel® ‘See ‘N’ Say Storymaker’. 
 Version: 1.0
-Image attribution:
+Image attribution: Anndriu U.
 */
 
 /*
@@ -18,47 +18,46 @@ function random_card_1() {
 
   switch (random_number) {
     case 1:
-      src = '../img/the-turkey.jpg';
-      text = 'The turkey';
+      src1 = '../img/the-turkey.jpg';
+      text1 = 'The turkey';
       break;
     case 2:
-      src = '../img/mom.jpg';
-      text = 'Mon';
+      src1 = '../img/mom.jpg';
+      text1 = 'Mon';
       break;
     case 3:
-      src = '../img/dad.jpg';
-      text = 'Dad';
+      src1 = '../img/dad.jpg';
+      text1 = 'Dad';
       break;
     case 4:
-      src = '../img/the-dog.jpg';
-      text = 'The dog';
+      src1 = '../img/the-dog.jpg';
+      text1 = 'The dog';
       break;
     case 5:
-      src = '../img/the-teacher.jpg';
-      text = 'The teacher';
+      src1 = '../img/the-teacher.jpg';
+      text1 = 'The teacher';
       break;
     case 6:
-      src = '../img/the-elephant.jpg';
-      text = 'The elephant';
+      src1 = '../img/the-elephant.jpg';
+      text1 = 'The elephant';
       break;
     case 7:
-      src = '../img/the-cat.jpg';
-      text = 'The cat';
+      src1 = '../img/the-cat.jpg';
+      text1 = 'The cat';
       break;  
     default:
       console.log("NAN");
   }
 
-  return {src, text};
+  return {src1, text1};
 }
 
 buttoncard1.onclick = () => {
-  const {src, text}  = random_card_1();
-  console.log(src);
-  console.log(text);
-
-  imgcard1.src = src;
-  textcard1.innerText = text;
+  // Gets a new path for the image and new text.
+  const {src1, text1}  = random_card_1();
+  // Updates the card image and card text.
+  imgcard1.src = src1;
+  textcard1.innerText = text1;
 };
 
 /*
@@ -73,43 +72,42 @@ function random_card_2() {
 
   switch (random_number) {
     case 1:
-      src = '../img/sat-on.jpg';
-      text = 'sat on';
+      src2 = '../img/sat-on.jpg';
+      text2 = 'sat on';
       break;
     case 2:
-      src = '../img/ate.jpg';
-      text = 'ate';
+      src2 = '../img/ate.jpg';
+      text2 = 'ate';
       break;
     case 3:
-      src = '../img/danced-with.jpg';
-      text = 'danced with';
+      src2 = '../img/danced-with.jpg';
+      text2 = 'danced with';
       break;
     case 4:
-      src = '../img/saw.jpg';
-      text = 'saw';
+      src2 = '../img/saw.jpg';
+      text2 = 'saw';
       break;
     case 5:
-      src = "../img/doesnt-like.jpg"
-      text = "doesn't like";
+      src2 = "../img/doesnt-like.jpg"
+      text2 = "doesn't like";
       break;
     case 6:
-      src = '../img/kissed.jpg';
-      text = 'kissed';
+      src2 = '../img/kissed.jpg';
+      text2 = 'kissed';
       break;
     default:
       console.log("NAN");
   }
 
-  return {src, text};
+  return {src2, text2};
 }
 
 buttoncard2.onclick = () => {
-  const {src, text}  = random_card_2();
-  console.log(src);
-  console.log(text);
-
-  imgcard2.src = src;
-  textcard2.innerText = text;
+  // Gets a new path for the image and new text.
+  const {src2, text2}  = random_card_2();
+  // Updates the card image and card text.
+  imgcard2.src = src2;
+  textcard2.innerText = text2;
 };
 
 /*
@@ -124,43 +122,42 @@ function random_card_3() {
 
   switch (random_number) {
     case 1:
-      src = '../img/a-funny.jpg';
-      text = 'a funny';
+      src3 = '../img/a-funny.jpg';
+      text3 = 'a funny';
       break;
     case 2:
-      src = '../img/a-scary.jpg';
-      text = 'a scary';
+      src3 = '../img/a-scary.jpg';
+      text3 = 'a scary';
       break;
     case 3:
-      src = '../img/a-goofy.jpg';
-      text = 'a goofy';
+      src3 = '../img/a-goofy.jpg';
+      text3 = 'a goofy';
       break;
     case 4:
-      src = '../img/a-slimy.jpg';
-      text = 'a slimy';
+      src3 = '../img/a-slimy.jpg';
+      text3 = 'a slimy';
       break;
     case 5:
-      src = '../img/a-barking.jpg';
-      text = 'a barking';
+      src3 = '../img/a-barking.jpg';
+      text3 = 'a barking';
       break;
     case 6:
-      src = '../img/a-fat.jpg';
-      text = 'a fat';
+      src3 = '../img/a-fat.jpg';
+      text3 = 'a fat';
       break;
     default:
       console.log("NAN");
   }
 
-  return {src, text};
+  return {src3, text3};
 }
 
 buttoncard3.onclick = () => {
-  const {src, text}  = random_card_3();
-  console.log(src);
-  console.log(text);
-
-  imgcard3.src = src;
-  textcard3.innerText = text;
+  // Gets a new path for the image and new text.
+  const {src3, text3}  = random_card_3();
+  // Updates the card image and card text.
+  imgcard3.src = src3;
+  textcard3.innerText = text3;
 };
 
 /*
@@ -175,47 +172,46 @@ function random_card_4() {
 
   switch (random_number) {
     case 1:
-      src = '../img/goat.jpg';
-      text = 'goat';
+      src4 = '../img/goat.jpg';
+      text4 = 'goat';
       break;
     case 2:
-      src = '../img/monkey.jpg';
-      text = 'monkey';
+      src4 = '../img/monkey.jpg';
+      text4 = 'monkey';
       break;
     case 3:
-      src = '../img/fish.jpg';
-      text = 'fish';
+      src4 = '../img/fish.jpg';
+      text4 = 'fish';
       break;
     case 4:
-      src = '../img/cow.jpg';
-      text = 'cow';
+      src4 = '../img/cow.jpg';
+      text4 = 'cow';
       break;
     case 5:
-      src = '../img/frog.jpg';
-      text = 'frog';
+      src4 = '../img/frog.jpg';
+      text4 = 'frog';
       break;
     case 6:
-      src = '../img/bug.jpg';
-      text = 'bug';
+      src4 = '../img/bug.jpg';
+      text4 = 'bug';
       break;
     case 7:
-      src = '../img/worm.jpg';
-      text = 'worm';
+      src4 = '../img/worm.jpg';
+      text4 = 'worm';
       break;  
     default:
       console.log("NAN");
   }
 
-  return {src, text};
+  return {src4, text4};
 }
 
 buttoncard4.onclick = () => {
-  const {src, text}  = random_card_4();
-  console.log(src);
-  console.log(text);
-
-  imgcard4.src = src;
-  textcard4.innerText = text;
+  // Gets a new path for the image and new text.
+  const {src4, text4}  = random_card_4();
+  // Updates the card image and card text.
+  imgcard4.src = src4;
+  textcard4.innerText = text4;
 };
 
 /*
@@ -230,41 +226,65 @@ function random_card_5() {
 
   switch (random_number) {
     case 1:
-      src = '../img/on-the-moon.jpg';
-      text = 'on the moon';
+      src5 = '../img/on-the-moon.jpg';
+      text5 = 'on the moon';
       break;
     case 2:
-      src = '../img/on-the-chair.jpg';
-      text = 'on the chair';
+      src5 = '../img/on-the-chair.jpg';
+      text5 = 'on the chair';
       break;
     case 3:
-      src = '../img/in-my-spaghetti.jpg';
-      text = 'in my spaghetti';
+      src5 = '../img/in-my-spaghetti.jpg';
+      text5 = 'in my spaghetti';
       break;
     case 4:
-      src = '../img/in-my-soup.jpg';
-      text = 'in my soup';
+      src5 = '../img/in-my-soup.jpg';
+      text5 = 'in my soup';
       break;
     case 5:
-      src = '../img/on-the-grass.jpg';
-      text = 'on the grass';
+      src5 = '../img/on-the-grass.jpg';
+      text5 = 'on the grass';
       break;
     case 6:
-      src = '../img/in-my-shoes.jpg';
-      text = 'in my shoes';
+      src5 = '../img/in-my-shoes.jpg';
+      text5 = 'in my shoes';
       break;  
     default:
       console.log("NAN");
   }
 
-  return {src, text};
+  return {src5, text5};
 }
 
 buttoncard5.onclick = () => {
-  const {src, text}  = random_card_5();
-  console.log(src);
-  console.log(text);
+  // Gets a new path for the image and new text.
+  const {src5, text5}  = random_card_5();
+  // Updates the card image and card text.
+  imgcard5.src = src5;
+  textcard5.innerText = text5;
+};
 
-  imgcard5.src = src;
-  textcard5.innerText = text;
+
+/*
+ Button Surprise
+*/
+const button_surprise = document.querySelector("#button-surprise");
+button_surprise.onclick = () => {
+  // Gets a new path for the image and new text.
+  const {src1, text1}  = random_card_1();
+  const {src2, text2}  = random_card_2();
+  const {src3, text3}  = random_card_3();
+  const {src4, text4}  = random_card_4();
+  const {src5, text5}  = random_card_5();
+  // Updates the card image and card text.
+  imgcard1.src = src1;
+  textcard1.innerText = text1;
+  imgcard2.src = src2;
+  textcard2.innerText = text2;
+  imgcard3.src = src3;
+  textcard3.innerText = text3;
+  imgcard4.src = src4;
+  textcard4.innerText = text4;
+  imgcard5.src = src5;
+  textcard5.innerText = text5;
 };
