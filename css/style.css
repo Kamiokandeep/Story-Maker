@@ -14,7 +14,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(227, 227, 227);
+    background-color: #cebc5a;
 }
 
 .grid-container {
@@ -39,7 +39,6 @@ body {
    CSS Header 
    ---------- */
 .item[style*="grid-area: header"] {
-    background-color: #4c89af;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -51,19 +50,8 @@ body {
     padding: 5px 10px;
     font-weight: bold;
     font-size: 1.6em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
-
-
-/* --------
-   CSS IMG 
-   -------- */
-img {
-    height: 200px;
-    width: 200px;
-    padding: 1vw;
-}
-
 
 /* -----------
    CSS Button 
@@ -74,19 +62,61 @@ img {
     align-items: center;
 }
 
-button {
+button{
     padding: 10px;
-    background-color: #4c89af;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #315f7c;
+#button-card-1 {
+    background-color: #7b35b2;
 }
 
+#button-card-1:hover {
+    background-color: #56247b;
+}
+
+#button-card-2 {
+    background-color: #029fe6;
+}
+
+#button-card-2:hover {
+    background-color: #027cb4;
+}
+
+#button-card-3 {
+    background-color: #6aae4b;
+}
+
+#button-card-3:hover {
+    background-color: #487433;
+}
+
+#button-card-4 {
+    background-color: #c87c4a;
+}
+
+#button-card-4:hover {
+    background-color: #81502f;
+}
+
+#button-card-5 {
+    background-color: #d855c7;
+}
+
+#button-card-5:hover {
+    background-color: #953a89;
+}
+
+#button-surprise {
+    background-color: #4c89af;
+}
+
+#button-surprise:hover {
+    background-color: #315f7c;
+}
 
 /* --------
    CSS IMG 
@@ -94,8 +124,8 @@ button:hover {
    img {
     height: 200px;
     width: 200px;
+    padding: 1vw;
 }
-
 
 /* ------------
     CSS Footer
@@ -103,7 +133,6 @@ button:hover {
    .item[style*="grid-area: footer"] {
     text-align: center;
     padding: 20px;
-    background-color: #4c89af;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 10px;
 }
