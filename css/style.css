@@ -28,6 +28,7 @@ body {
         "surprise surprise surprise surprise surprise"
         "footer footer footer footer footer";
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
 }
 
 .item {
