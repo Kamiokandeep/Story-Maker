@@ -222,27 +222,27 @@ function random_card_5() {
   switch (random_number) {
     case 1:
       src5 = 'img/on-the-moon.jpg';
-      text5 = 'on the moon';
+      text5 = 'on the moon.';
       break;
     case 2:
       src5 = 'img/on-the-chair.jpg';
-      text5 = 'on the chair';
+      text5 = 'on the chair.';
       break;
     case 3:
       src5 = 'img/in-my-spaghetti.jpg';
-      text5 = 'in my spaghetti';
+      text5 = 'in my spaghetti.';
       break;
     case 4:
       src5 = 'img/in-my-soup.jpg';
-      text5 = 'in my soup';
+      text5 = 'in my soup.';
       break;
     case 5:
       src5 = 'img/on-the-grass.jpg';
-      text5 = 'on the grass';
+      text5 = 'on the grass.';
       break;
     case 6:
       src5 = 'img/in-my-shoes.jpg';
-      text5 = 'in my shoes';
+      text5 = 'in my shoes.';
       break;  
     default:
       console.log("NAN");
