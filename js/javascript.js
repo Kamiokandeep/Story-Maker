@@ -11,11 +11,22 @@ Image attribution: Anndriu U.
 */
 const buttoncard1 = document.querySelector("#button-card-1");
 const imgcard1 = document.querySelector('#img-card-1');
+const numcard1 = [1, 2, 3, 4, 5, 6, 7];
+var index1 = 0;
 
-function random_card_1() {
-  var random_number = Math.floor(Math.random() * 7) + 1;
+function card_1(random) {
+  // Random option
+  if (random == 1) {
+    var option = Math.floor(Math.random() * 7) + 1;
+  // Ordered option
+  } else if (random == 0) {    
+    // Query each value of the array
+    var option = numcard1[index1];
+    // Add a position and when dividing the index by the length of the array, do not allow it to exceed the size of the array.
+    index1 = (index1 + 1) % numcard1.length;
+  }
 
-  switch (random_number) {
+  switch (option) {
     case 1:
       src1 = "img/the-turkey.jpg";
       text1 = "The turkey";
@@ -53,7 +64,7 @@ function random_card_1() {
 
 buttoncard1.onclick = () => {
   // Gets a new path for the image and new text.
-  const {src1, text1}  = random_card_1();
+  const {src1, text1}  = card_1(0);
   // Updates the card image and card text.
   imgcard1.src = src1;
   buttoncard1.innerText = text1;
@@ -64,11 +75,22 @@ buttoncard1.onclick = () => {
 */
 const buttoncard2 = document.querySelector("#button-card-2");
 const imgcard2 = document.querySelector('#img-card-2');
+const numcard2 = [1, 2, 3, 4, 5, 6];
+var index2 = 0;
 
-function random_card_2() {
-  var random_number = Math.floor(Math.random() * 6) + 1;
+function card_2(random) {
+  // Random option
+  if (random == 1) {
+    var option = Math.floor(Math.random() * 6) + 1;
+  // Ordered option
+  } else if (random == 0) {    
+    // Query each value of the array
+    var option = numcard2[index2];
+    // Add a position and when dividing the index by the length of the array, do not allow it to exceed the size of the array.
+    index2 = (index2 + 1) % numcard2.length;
+  }
 
-  switch (random_number) {
+  switch (option) {
     case 1:
       src2 = 'img/sat-on.jpg';
       text2 = 'sat on';
@@ -102,7 +124,7 @@ function random_card_2() {
 
 buttoncard2.onclick = () => {
   // Gets a new path for the image and new text.
-  const {src2, text2}  = random_card_2();
+  const {src2, text2}  = card_2(0);
   // Updates the card image and card text.
   imgcard2.src = src2;
   buttoncard2.innerText = text2;
@@ -113,11 +135,22 @@ buttoncard2.onclick = () => {
 */
 const buttoncard3 = document.querySelector("#button-card-3");
 const imgcard3 = document.querySelector('#img-card-3');
+const numcard3 = [1, 2, 3, 4, 5, 6];
+var index3 = 0;
 
-function random_card_3() {
-  var random_number = Math.floor(Math.random() * 6) + 1;
+function card_3(random) {
+  // Random option
+  if (random == 1) {
+    var option = Math.floor(Math.random() * 6) + 1;
+  // Ordered option
+  } else if (random == 0) {    
+    // Query each value of the array
+    var option = numcard3[index3];
+    // Add a position and when dividing the index by the length of the array, do not allow it to exceed the size of the array.
+    index3 = (index3 + 1) % numcard3.length;
+  }
 
-  switch (random_number) {
+  switch (option) {
     case 1:
       src3 = 'img/a-funny.jpg';
       text3 = 'a funny';
@@ -151,7 +184,7 @@ function random_card_3() {
 
 buttoncard3.onclick = () => {
   // Gets a new path for the image and new text.
-  const {src3, text3}  = random_card_3();
+  const {src3, text3}  = card_3(0);
   // Updates the card image and card text.
   imgcard3.src = src3;
   buttoncard3.innerText = text3;
@@ -162,11 +195,21 @@ buttoncard3.onclick = () => {
 */
 const buttoncard4 = document.querySelector("#button-card-4");
 const imgcard4 = document.querySelector('#img-card-4');
+const numcard4 = [1, 2, 3, 4, 5, 6, 7];
+var index4 = 0;
 
-function random_card_4() {
-  var random_number = Math.floor(Math.random() * 7) + 1;
-
-  switch (random_number) {
+function card_4(random) {
+  // Random option
+  if (random == 1) {
+    var option = Math.floor(Math.random() * 7) + 1;
+  // Ordered option
+  } else if (random == 0) {    
+    // Query each value of the array
+    var option = numcard4[index4];
+    // Add a position and when dividing the index by the length of the array, do not allow it to exceed the size of the array.
+    index4 = (index4 + 1) % numcard4.length;
+  }
+  switch (option) {
     case 1:
       src4 = 'img/goat.jpg';
       text4 = 'goat';
@@ -204,7 +247,7 @@ function random_card_4() {
 
 buttoncard4.onclick = () => {
   // Gets a new path for the image and new text.
-  const {src4, text4}  = random_card_4();
+  const {src4, text4}  = card_4(0);
   // Updates the card image and card text.
   imgcard4.src = src4;
   buttoncard4.innerText = text4;
@@ -215,11 +258,21 @@ buttoncard4.onclick = () => {
 */
 const buttoncard5 = document.querySelector("#button-card-5");
 const imgcard5 = document.querySelector('#img-card-5');
+const numcard5 = [1, 2, 3, 4, 5, 6];
+var index5 = 0;
 
-function random_card_5() {
-  var random_number = Math.floor(Math.random() * 6) + 1;
-
-  switch (random_number) {
+function card_5(random) {
+  // Random option
+  if (random == 1) {
+    var option = Math.floor(Math.random() * 6) + 1;
+  // Ordered option
+  } else if (random == 0) {    
+    // Query each value of the array
+    var option = numcard5[index5];
+    // Add a position and when dividing the index by the length of the array, do not allow it to exceed the size of the array.
+    index5 = (index5 + 1) % numcard5.length;
+  }
+  switch (option) {
     case 1:
       src5 = 'img/on-the-moon.jpg';
       text5 = 'on the moon.';
@@ -253,7 +306,7 @@ function random_card_5() {
 
 buttoncard5.onclick = () => {
   // Gets a new path for the image and new text.
-  const {src5, text5}  = random_card_5();
+  const {src5, text5}  = card_5(0);
   // Updates the card image and card text.
   imgcard5.src = src5;
   buttoncard5.innerText = text5;
@@ -266,11 +319,11 @@ buttoncard5.onclick = () => {
 const button_surprise = document.querySelector("#button-surprise");
 button_surprise.onclick = () => {
   // Gets a new path for the image and new text.
-  const {src1, text1}  = random_card_1();
-  const {src2, text2}  = random_card_2();
-  const {src3, text3}  = random_card_3();
-  const {src4, text4}  = random_card_4();
-  const {src5, text5}  = random_card_5();
+  const {src1, text1}  = card_1(1);
+  const {src2, text2}  = card_2(1);
+  const {src3, text3}  = card_3(1);
+  const {src4, text4}  = card_4(1);
+  const {src5, text5}  = card_5(1);
   // Updates the card image and card text.
   imgcard1.src = src1;
   buttoncard1.innerText = text1;
